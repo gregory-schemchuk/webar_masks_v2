@@ -1,7 +1,7 @@
 // SETTINGS of this demo:
 const SETTINGS = {
-    //gltfModelURL: 'mask_gjel/mask.gltf',
-    gltfModelURL: 'DamagedHelmet/glTF/DamagedHelmet.gltf',
+    gltfModelURL: 'mask_gjel/mask.gltf',
+    //gltfModelURL: 'DamagedHelmet/glTF/DamagedHelmet.gltf',
     //gltfModelURL: 'Kokoshnik/Unreal Engine 4.gltf',
     //gltfModelURL: 'head_test/koltsa.gltf',
     cubeMapURL: 'Bridge2/',
