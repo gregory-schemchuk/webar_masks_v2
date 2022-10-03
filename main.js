@@ -5,10 +5,11 @@ const SETTINGS = {
     //gltfModelURL: 'Kokoshnik/Unreal Engine 4.gltf',
     //gltfModelURL: 'head_test/koltsa.gltf',
     cubeMapURL: 'Bridge2/',
-    offsetYZ: [1.4, 0.65], // offset of the model in 3D along vertical and depth axis
+    //offsetYZ: [1.4, 0.65], // offset of the model in 3D along vertical and depth axis
+    offsetYZ: [-1, 0], // offset of the model in 3D along vertical and depth axis
     //scale: 2.5
     //offsetYZ: [2.7, -0.6], // offset of the model in 3D along vertical and depth axis
-    scale: 8
+    scale: 10
     //offsetYZ: [-1, -20], // offset of the model in 3D along vertical and depth axis
     //scale: 45
 };
@@ -20,6 +21,7 @@ let THREECAMERA = null;
 function init_threeScene(spec){
     console.log('HERE');
     const threeStuffs = JeelizThreeHelper.init(spec, null);
+    console.log('HERE 2');
 
     // CREATE THE ENVMAP:
     /*
