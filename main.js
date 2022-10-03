@@ -1,15 +1,15 @@
 // SETTINGS of this demo:
 const SETTINGS = {
     gltfModelURL: 'mask_gjel/mask.gltf',
+    //gltfModelURL: 'kokoshnik_v2/kokoshnik.gltf',
     //gltfModelURL: 'DamagedHelmet/glTF/DamagedHelmet.gltf',
     //gltfModelURL: 'Kokoshnik/Unreal Engine 4.gltf',
     //gltfModelURL: 'head_test/koltsa.gltf',
     cubeMapURL: 'Bridge2/',
-    //offsetYZ: [1.4, 0.65], // offset of the model in 3D along vertical and depth axis
-    offsetYZ: [-1, 0], // offset of the model in 3D along vertical and depth axis
+    offsetYZ: [16.43, 5.43], // offset of the model in 3D along vertical and depth axis
     //scale: 2.5
     //offsetYZ: [2.7, -0.6], // offset of the model in 3D along vertical and depth axis
-    scale: 10
+    scale: 1.315
     //offsetYZ: [-1, -20], // offset of the model in 3D along vertical and depth axis
     //scale: 45
 };
@@ -19,9 +19,7 @@ let THREECAMERA = null;
 
 // build the 3D. called once when Jeeliz Face Filter is OK
 function init_threeScene(spec){
-    console.log('HERE');
     const threeStuffs = JeelizThreeHelper.init(spec, null);
-    console.log('HERE 2');
 
     // CREATE THE ENVMAP:
     /*
@@ -51,7 +49,7 @@ function init_threeScene(spec){
         // center the model:
         const centerBBox = bbox.getCenter(new THREE.Vector3());
         gltf.scene.position.add(centerBBox.multiplyScalar(-1));
-        gltf.scene.position.add(new THREE.Vector3(0,SETTINGS.offsetYZ[0], SETTINGS.offsetYZ[1]));
+        gltf.scene.position.add(new THREE.Vector3(0.167,SETTINGS.offsetYZ[0], SETTINGS.offsetYZ[1]));
 
         // scale the model according to its width:
         const sizeX = bbox.getSize(new THREE.Vector3()).x;
@@ -61,8 +59,8 @@ function init_threeScene(spec){
         threeStuffs.faceObject.add(gltf.scene);
 
         const light_2 = new THREE.DirectionalLight(0xFFFFFF);
-        light_2.position.set(10, 10, 20);
-        light_2.intensity = 2;
+        light_2.position.set(0, 10, 30);
+        light_2.intensity = 1.4
         //light_2.castShadow = true;
         threeStuffs.faceObject.add(light_2);
     } ); //end gltfLoader.load callback
