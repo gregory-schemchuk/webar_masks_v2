@@ -18,6 +18,7 @@ let THREECAMERA = null;
 
 // build the 3D. called once when Jeeliz Face Filter is OK
 function init_threeScene(spec){
+    console.log('HERE');
     const threeStuffs = JeelizThreeHelper.init(spec, null);
 
     // CREATE THE ENVMAP:
@@ -64,7 +65,6 @@ function init_threeScene(spec){
         threeStuffs.faceObject.add(light_2);
     } ); //end gltfLoader.load callback
 
-    console.log('HERE');
     //CREATE THE CAMERA
     THREECAMERA = JeelizThreeHelper.create_camera();
 } //end init_threeScene()
