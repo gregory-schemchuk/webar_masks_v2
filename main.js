@@ -1,7 +1,7 @@
 // SETTINGS of this demo:
 const SETTINGS = {
-    gltfModelURL: 'mask_gjel/mask.gltf',
-    //gltfModelURL: 'DamagedHelmet/glTF/DamagedHelmet.gltf',
+    //gltfModelURL: 'mask_gjel/mask.gltf',
+    gltfModelURL: 'DamagedHelmet/glTF/DamagedHelmet.gltf',
     //gltfModelURL: 'Kokoshnik/Unreal Engine 4.gltf',
     //gltfModelURL: 'head_test/koltsa.gltf',
     cubeMapURL: 'Bridge2/',
@@ -59,7 +59,7 @@ function init_threeScene(spec){
 
         const light_2 = new THREE.DirectionalLight(0xFFFFFF);
         light_2.position.set(10, 10, 20);
-        light_2.intensity = 3;
+        light_2.intensity = 2;
         //light_2.castShadow = true;
         threeStuffs.faceObject.add(light_2);
     } ); //end gltfLoader.load callback
