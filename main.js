@@ -1,17 +1,19 @@
 // SETTINGS of this demo:
 const SETTINGS = {
-    gltfModelURL: 'mask_gjel/mask.gltf',
+    gltfModelURL: 'khokhloma_hat/khokhloma_hat.gltf',
     //gltfModelURL: 'kokoshnik_v2/kokoshnik.gltf',
     //gltfModelURL: 'DamagedHelmet/glTF/DamagedHelmet.gltf',
     //gltfModelURL: 'Kokoshnik/Unreal Engine 4.gltf',
     //gltfModelURL: 'head_test/koltsa.gltf',
     cubeMapURL: 'Bridge2/',
-    offsetYZ: [16.43, 5.43], // offset of the model in 3D along vertical and depth axis
+    //offsetYZ: [16.43, 5.43], // offset of the model in 3D along vertical and depth axis
     //scale: 2.5
     //offsetYZ: [2.7, -0.6], // offset of the model in 3D along vertical and depth axis
-    scale: 1.315
+    //scale: 1.315
     //offsetYZ: [-1, -20], // offset of the model in 3D along vertical and depth axis
     //scale: 45
+    offsetYZ: [23.3, 2],
+    scale: 1.35
 };
 
 let THREECAMERA = null;
@@ -49,7 +51,7 @@ function init_threeScene(spec){
         // center the model:
         const centerBBox = bbox.getCenter(new THREE.Vector3());
         gltf.scene.position.add(centerBBox.multiplyScalar(-1));
-        gltf.scene.position.add(new THREE.Vector3(0.167,SETTINGS.offsetYZ[0], SETTINGS.offsetYZ[1]));
+        gltf.scene.position.add(new THREE.Vector3(0,SETTINGS.offsetYZ[0], SETTINGS.offsetYZ[1]));
 
         // scale the model according to its width:
         const sizeX = bbox.getSize(new THREE.Vector3()).x;
@@ -59,7 +61,7 @@ function init_threeScene(spec){
         threeStuffs.faceObject.add(gltf.scene);
 
         const light_2 = new THREE.DirectionalLight(0xFFFFFF);
-        light_2.position.set(0, 10, 30);
+        light_2.position.set(0, 10, 100);
         light_2.intensity = 1.4
         //light_2.castShadow = true;
         threeStuffs.faceObject.add(light_2);

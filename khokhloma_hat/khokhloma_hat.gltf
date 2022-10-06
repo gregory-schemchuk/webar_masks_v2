@@ -1,0 +1,307 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.3.27",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "KHR_materials_specular",
+        "KHR_materials_ior"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "main",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                0,
+                27.7528076171875,
+                2.266789436340332
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "details",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                -0.06165558099746704,
+                27.799800872802734,
+                1.1376699209213257
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "extensions" : {
+                "KHR_materials_specular" : {
+                    "specularColorFactor" : [
+                        0.6786989141662153,
+                        0.6786989141662153,
+                        0.6786989141662153
+                    ]
+                },
+                "KHR_materials_ior" : {
+                    "ior" : 1.4500000476837158
+                }
+            },
+            "name" : "main",
+            "normalTexture" : {
+                "index" : 0,
+                "scale" : 0.10000002384185791
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicFactor" : 0,
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "details",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 3
+                },
+                "metallicFactor" : 0,
+                "metallicRoughnessTexture" : {
+                    "index" : 4
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Plane.016",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        },
+        {
+            "sampler" : 0,
+            "source" : 4
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "1648758493_3-gamerwall-pro-p-fon-v-stile-russkikh-skazok-krasivie-3_N",
+            "uri" : "main_Normal.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "1648758493_3-gamerwall-pro-p-fon-v-stile-russkikh-skazok-krasivie-3_1",
+            "uri" : "main_Base_color.jpg"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "1648758493_3-gamerwall-pro-p-fon-v-stile-russkikh-skazok-krasivie-3_R",
+            "uri" : "main_Roughness.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "details_Base_color",
+            "uri" : "details_Base_color.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "details_Roughness",
+            "uri" : "details_Roughness.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 492,
+            "max" : [
+                8.110292434692383,
+                3.5435216426849365,
+                10.264383316040039
+            ],
+            "min" : [
+                -8.110292434692383,
+                -4.441733360290527,
+                -3.3230748176574707
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 492,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 492,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 1992,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2665,
+            "max" : [
+                8.259033203125,
+                4.584084510803223,
+                10.395277976989746
+            ],
+            "min" : [
+                -8.147397994995117,
+                -3.3891685009002686,
+                -3.737517833709717
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 2665,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 2665,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 10860,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 5904,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5904,
+            "byteOffset" : 5904,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3936,
+            "byteOffset" : 11808,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3984,
+            "byteOffset" : 15744,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 31980,
+            "byteOffset" : 19728,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 31980,
+            "byteOffset" : 51708,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 21320,
+            "byteOffset" : 83688,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 21720,
+            "byteOffset" : 105008,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 126728,
+            "uri" : "khokhloma_hat.bin"
+        }
+    ]
+}
